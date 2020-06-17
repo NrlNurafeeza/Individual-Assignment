@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<title>My Expertise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 1px;
+}
+.fa:hover {
+    opacity: 0.4;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<!-- Add font awesome icons -->
+<div class="w3-bar w3-black w3-hide-small">
+<right>
+  <a href="index.html" class="w3-bar-item w3-button">NuraFeeza</a>
+</right>
+<Left>
+<a href="https://www.facebook.com/nurul.nurafeeza.9" class="w3-bar-item w3-button w3-right"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/nrlfeeza_/?hl=en" class="w3-bar-item w3-button w3-right"><i class="fa fa-instagram"></i></a>
+<a href="https://mail.google.com" class="w3-bar-item w3-button w3-right"><i class="fa fa-google"></i></a>
+<a href="https://www.google.com" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</Left>
+</div>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {font-family: "Lato", sans-serif;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 17px;
+  width: 12.5%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Style the footer */
+.footer {
+  background-color:black;
+  padding: 10px;
+ text-align: center;
+ color: white;
+ font-family: Lucida Handwriting;
+} 
+
+#About {background-image: url(doodles.jpg); background-position: unset; padding: 2px;}
+#Family {background-image: url(family.jpg); background-position: right left; padding: 2px;}
+#Gallery {background-image: url(gallery.jpg); background-position: center; padding: 2px;}
+#Contact {background-image: url(daun2.jpg); background-position: bottom; padding: 2px;}
+#Expertise {background-image: url(expertise.jpg); background-position: bottom left; padding: 2px;}
+#Education {background-image: url(education.jpg); background-position: center left; padding: 2px;}
+#Experience {background-image: url(experience.jpg); background-position: center left; padding: 2px;}
+</style>
+</style>
+</head>
+<body>
+
+<div id="About"A HREF="About me.html"TARGET="A" class="tabcontent">
+  <h1>Nurul Nurafeeza</h1>
+  <p>Let's get to know me better.</p>
+</div>
+
+<div id="Expertise" class="tabcontent">
+  <h1>My Expertise</h1>
+  <p>Skills are common. Talent is rare.</p> 
+</div>
+
+<div id="Experience" class="tabcontent">
+  <h1>My Experience</h1>
+  <p>“Nothing ever becomes real 'til it is experienced.” </p>
+</div>
+
+<div id="Education" class="tabcontent">
+  <h1>My Education Background</h1>
+  <p>Education is the passport to the future, for tomorrow belongs to those who prepare for it today.</p>
+</div>
+
+<div id="Family" class="tabcontent">
+  <h1><CENTER><IMG SRC="family.gif" height="50"></h1>
+  <p>My Everything.</p> 
+</div>
+
+<div id="Gallery" class="tabcontent">
+  <h1>Memories of My Life</h1>
+  <p>Thing that you see in my pictures is that I was not afraid to fall in love with myself and these people.</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h1>How to Contact me?</h1>
+  <p>Anything just kindly refer belows information to contact me.</p>
+</div>
+
+<button class="tablink" onclick="openCity('Home', this, '#0c540f')"><a href="index.html">Home</a></button>
+<button class="tablink" onclick="openCity('About', this, ' #02372d ')" ><a href="About me.html">About</a></button>
+<button class="tablink" onclick="openCity('Expertise', this, ' #4b6a4c ')"id="defaultOpen"><a href="Expertise.html">Expertise</button></a>
+<button class="tablink" onclick="openCity('Experience', this, ' orangered ')"><a href="Experience.html">Experience</a></button>
+<button class="tablink" onclick="openCity('Education', this, ' brown')"><a href="Education.html">Education</a></button>
+<button class="tablink" onclick="openCity('Family', this, ' #F08080 ')" ><a href="Family.html">Family</a></button>
+<button class="tablink" onclick="openCity('Gallery', this, ' #4b6a4c ')"><a href="Gallery.html">Gallery</button></a>
+<button class="tablink" onclick="openCity('Contact', this, ' #5d9760 ')"><a href="Contact.html">Contact</button></a>
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "black";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script> 
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:black;
+  color: white;
+}
+
+body {
+  background-image: url("white5.jpg"); background-position: right left;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: right;
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 90%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-6 {width: 80%; height: 16px; background-color: #2196F3;}
+.bar-5 {width: 70%; height: 16px; background-color: #FFC300;}
+.bar-4 {width: 85%; height: 16px; background-color: #19ec08;}
+.bar-3 {width: 60%; height: 16px; background-color: #c895d8;}
+.bar-2 {width: 90%; height: 16px; background-color: #C70039;}
+.bar-1 {width: 65%; height: 16px; background-color: #f44336;}
+
+table, td, th {
+  border: 8px double black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+
+}
+
+th {
+  text-align: center;
+  table-align: center;
+}
+
+h3 {
+  background-color: black;
+    color: goldenrod;
+    text-align: center;
+    font-family: Broadway;
+} 
+h2 {
+    color: black;
+    text-align: center;
+    font-family: times new roman;
+    font-style: bold;
+    font-size: 40px;
+}
+</style>
+</head>
+
+<body>
+<CENTER><h2><B>MY EXPERTISE</B></h2></CENTER>
+
+  <div class="w3-container w3-padding-large">
+      <div style="background-color:#00201a;">
+   <FONT COLOR="white"><B><center>MY SKILLS</B></center></FONT>
+    <hr style="border:1px solid #f1f1f1">
+<div class="row">
+  <div class="side">
+    <div><FONT COLOR="white">Computer</FONT></div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-6"></div>
+    </div>
+  </div>
+<div class="row">
+  </div>
+  <div class="side">
+    <div><FONT COLOR="white">Creativity</FONT></div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+<div class="row">
+</div>
+  <div class="side">
+    <div><FONT COLOR="white">Communication</FONT></div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="row">
+  </div>
+  <div class="side">
+    <div><FONT COLOR="white">Perseverance</FONT></div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="row">
+</div>
+  <div class="side">
+    <div><FONT COLOR="white">Teamwork</FONT></div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="row">
+  </div>
+  <div class="side">
+    <div><FONT COLOR="white">Listening</FONT></div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+   </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<CENTER><h3><b>MY INTEREST & HOBBIES</b></h3></CENTER>
+ <table id="MY INTEREST AND HOBBIES">
+<table align="center">
+<tr><FONT COLOR="black">
+    <th><B><FONT COLOR="darkblue">INTEREST</B></th></FONT>
+    <th><B><FONT COLOR="maroon">HOBBIES</B></th></FONT>
+  </tr>
+  <tr>
+    <td><ol>
+  <li>Arts</li>
+  <li>Sports</li>
+  <li>Traveling</li>
+  <li>Music</li>
+  <li>Illustrating</li>
+</ol> 
+    <td> <ul>
+  <li>Singing</li>
+  <li>Baking</li>
+  <li>Reading Novels</li>
+  <li>Painting</li>
+</ul> </td>
+</table><BR><br>
+</center> 
+
+</div>
+
+<div class="footer">
+  <p>"Be proud of who you are, and not ashamed of how someone else sees you."</p>
+  <audio>
+  <div style="visibility:hidden">
+    <audio autoplay loop>
+    <source src="ARIANA.mp3">
+</audio>
+</div>
+</body>
+</html>

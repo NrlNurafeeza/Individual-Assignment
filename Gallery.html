@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<title>My Gallery</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 1px;
+}
+.fa:hover {
+    opacity: 0.4;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<!-- Add font awesome icons -->
+<div class="w3-bar w3-black w3-hide-small">
+<right>
+  <a href="index.html" class="w3-bar-item w3-button">NuraFeeza</a>
+</right>
+<Left>
+<a href="https://www.facebook.com/nurul.nurafeeza.9" class="w3-bar-item w3-button w3-right"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/nrlfeeza_/?hl=en" class="w3-bar-item w3-button w3-right"><i class="fa fa-instagram"></i></a>
+<a href="https://mail.google.com" class="w3-bar-item w3-button w3-right"><i class="fa fa-google"></i></a>
+<a href="https://www.google.com" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</Left>
+</div>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {font-family: "Lato", sans-serif;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 17px;
+  width: 12.5%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+/* Style the footer */
+.footer {
+  background-color:black;
+  padding: 10px;
+ text-align: center;
+ color: white;
+ font-family: Lucida Handwriting;
+} 
+div.gallery {
+  margin: 1.5px;
+  border: 4px solid #ccc;
+  float: left;
+  width: 330px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 14px;
+  text-align: center;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 2px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  height: 20%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#About {background-image: url(doodles.jpg); background-position: unset; padding: 2px;}
+#Family {background-image: url(family.jpg); background-position: right left; padding: 2px;}
+#Gallery {background-image: url(gallery.jpg); background-position: center; padding: 2px;}
+#Contact {background-image: url(daun2.jpg); background-position: bottom; padding: 2px;}
+#Expertise {background-image: url(expertise.jpg); background-position: bottom left; padding: 2px;}
+#Education {background-image: url(education.jpg); background-position: center left; padding: 2px;}
+#Experience {background-image: url(experience.jpg); background-position: center left; padding: 2px;}
+
+body {
+  background-image: url("white5.jpg"); background-position: right left;
+}
+/* Style the footer */
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: Lucida Handwriting;
+    font-style: bold;
+    font-size: 40px;
+}
+div.blockquote{
+ color: midnightblue;
+ background-color: tomato;
+ font-style: oblique;
+ font-family: Bradley Hand ITC;
+ font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div id="About"A HREF="About me.html"TARGET="A" class="tabcontent">
+  <h1>Nurul Nurafeeza</h1>
+  <p>Let's get to know me better.</p>
+</div>
+
+<div id="Expertise" class="tabcontent">
+  <h1>My Expertise</h1>
+  <p>Skills are common. Talent is rare.</p> 
+</div>
+
+<div id="Experience" class="tabcontent">
+  <h1>My Experience</h1>
+  <p>“Nothing ever becomes real 'til it is experienced.” </p>
+</div>
+
+<div id="Education" class="tabcontent">
+  <h1>My Education Background</h1>
+  <p>Education is the passport to the future, for tomorrow belongs to those who prepare for it today.</p>
+</div>
+
+<div id="Family" class="tabcontent">
+  <h1><CENTER><IMG SRC="family.gif" height="50"></h1>
+  <p>My Everything.</p> 
+</div>
+
+<div id="Gallery" class="tabcontent">
+  <h1>Memories of My Life</h1>
+  <p>Thing that you see in my pictures is that I was not afraid to fall in love with myself and these people.</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h1>How to Contact me?</h1>
+  <p>Anything just kindly refer belows information to contact me.</p>
+</div>
+
+<button class="tablink" onclick="openCity('Home', this, '#0c540f')"><a href="index.html">Home</a></button>
+<button class="tablink" onclick="openCity('About', this, ' #02372d ')"><a href="About me.html">About</a></button>
+<button class="tablink" onclick="openCity('Expertise', this, ' #4b6a4c ')"><a href="Expertise.html">Expertise</button></a>
+<button class="tablink" onclick="openCity('Experience', this, 'orangered')"><a href="Experience.html">Experience</a></button>
+<button class="tablink" onclick="openCity('Education', this, ' brown')"><a href="Education.html">Education</a></button>
+<button class="tablink" onclick="openCity('Family', this, ' #F08080 ')" ><a href="Family.html">Family</a></button>
+<button class="tablink" onclick="openCity('Gallery', this, ' #4b6a4c ')"id="defaultOpen" ><a href="Gallery.html">Gallery</button></a>
+<button class="tablink" onclick="openCity('Contact', this, ' #5d9760 ')"><a href="Contact.html">Contact</button></a>
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "black";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script> 
+
+</style>
+</head>
+
+
+<body>
+
+<h2 style="text-align:center">My Friends and I</h2>
+<p><b>Quotes:</b></p>
+    <div class=blockquote><blockquote cite="https://www.azquotes.com/quotes/topics/many-friends.html">Many people will walk in and out of your life, but only true friends will leave footprints in your heart.</blockquote></div>
+
+
+<div class="row">
+  <div class="column">
+    <img src="Pictures/friends1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Pictures/friends2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Pictures/friends.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Pictures/roomate1.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Pictures/degree.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="Pictures/friends1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="Pictures/friends2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="Pictures/friends.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Pictures/roomate1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Pictures/degree.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="friends1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bestfriends at UiTM Dungun">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="friends2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Closed friends at UiTM Dungun">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="friends.jpg" style="width:100%" onclick="currentSlide(3)" alt="My Bestfriends">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="roomate1.jpg" style="width:100%" onclick="currentSlide(6)" alt="My Beloved Roommate semester one diploma at Uitm Dungun">
+    </div>
+  <div class="column">
+      <img class="demo cursor" src="degree.jpg" style="width:100%" onclick="currentSlide(5)" alt="Closed Friends at UiTM Machang">
+    </div>
+   </div> 
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br>
+
+<h2><center>My Best Memories</h2></center>
+<p><b>A Quotes that really related to these captions:</b></p>
+<div class=blockquote><blockquote cite="https://quotesnsmiles.com/picture-quotes/images-15-unforgettable-memory-picture-quotes/">Memory is a way of holding on to the things you love, the things you are, the things you never want to lose.</blockquote></div>
+
+<div class="gallery">
+  <video width="324" height="240" controls>
+  <source src="form6.mp4" type="video/mp4"></video>
+  <div class="desc"><b>Form 6 Cultural Show</b></div>
+  The Best Moments in Form 6 with my Orientation Group Members, Names as MatSalleh.
+</div>
+<div class="gallery">
+  <video width="324" height="240" controls>
+  <source src="mds.mp4" type="video/mp4"></video>
+  <div class="desc"><b>Cultural Night-MDS Diploma-UiTM Dungun</i></b></div>
+  This video is my first time singing on stage infront of many people.
+Felt vey nervous, but I really enjoy it !!!
+</div>
+<div class="gallery">
+  <video width="324" height="240" controls>
+  <source src="baldu.mp4" type="video/mp4"></video>
+  <div class="desc"><b>A Singing competition</b></div>
+  It was one of my best memories in my life that i can show and perform my talent to people.
+</div>
+<div class="gallery">
+  <video width="324" height="240" controls>
+  <source src="theater.mp4" type="video/mp4"></video>
+  <div class="desc"><b>Theater Show</b></div>
+  After joined the MDS performance, I joined in 'Kerabat Kebudayaan' and participated in a theater.
+THis video was taken at the end of the theater night.</div>
+</div>
+</div>
+</div>
+<br>
+
+<h2>The Specials and unforgettable Moments With My Family And Friends</h2>
+<img src="Pictures/famabah.jpg" style="width:24%">&nbsp;&nbsp;<img src="Pictures/famak.jpg" style="width:24%">&nbsp;&nbsp;<img src="Pictures/laoshi.jpg" style="width:24%">&nbsp;&nbsp;<img src="Pictures/covid.jpg" style="width:24%"><br>
+<img src="Pictures/siblings.jpg" style="width:24%">&nbsp;&nbsp;<img src="Pictures/classmate1.jpg" style="width:24%">&nbsp;&nbsp;<img src="Pictures/ting6.jpg" style="width:24%">&nbsp;&nbsp;<img src="Pictures/karisma.jpg" style="width:23.5%"><br>
+<img src="Pictures/maka.jpg" style="width:24%">&nbsp;&nbsp;<img src="Pictures/form5.jpg" style="width:24%">&nbsp;&nbsp;<img src="Pictures/part1.jpg" style="width:24%">&nbsp;&nbsp;<img src="Pictures/form6.jpg" style="width:23.5%"><br>
+
+</div>
+
+<div class="footer">
+  <p>"Be proud of who you are, and not ashamed of how someone else sees you."</p>
+  <audio>
+  <div style="visibility:hidden">
+    <audio autoplay loop>
+    <source src="ARIANA.mp3">
+</audio>
+</div>
+
+</body>
+</html>

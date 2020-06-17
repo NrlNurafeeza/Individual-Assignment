@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<title>My Family</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 1px;
+}
+.fa:hover {
+    opacity: 0.4;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<!-- Add font awesome icons -->
+<div class="w3-bar w3-black w3-hide-small">
+<right>
+  <a href="index.html" class="w3-bar-item w3-button">NuraFeeza</a>
+</right>
+<Left>
+<a href="https://www.facebook.com/nurul.nurafeeza.9" class="w3-bar-item w3-button w3-right"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/nrlfeeza_/?hl=en" class="w3-bar-item w3-button w3-right"><i class="fa fa-instagram"></i></a>
+<a href="https://mail.google.com" class="w3-bar-item w3-button w3-right"><i class="fa fa-google"></i></a>
+<a href="https://www.google.com" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</Left>
+</div>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {font-family: "Lato", sans-serif;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 17px;
+  width: 12.5%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Style the footer */
+.footer {
+  background-color:black;
+  padding: 10px;
+ text-align: center;
+ color: white;
+ font-family: Lucida Handwriting;
+} 
+
+p.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+#About {background-image: url(doodles.jpg); background-position: unset; padding: 2px;}
+#Family {background-image: url(family.jpg); background-position: right left; padding: 2px;}
+#Gallery {background-image: url(gallery.jpg); background-position: center; padding: 2px;}
+#Contact {background-image: url(daun2.jpg); background-position: bottom; padding: 2px;}
+#Expertise {background-image: url(expertise.jpg); background-position: bottom left; padding: 2px;}
+#Education {background-image: url(education.jpg); background-position: center left; padding: 2px;}
+#Experience {background-image: url(experience.jpg); background-position: center left; padding: 2px;}
+</style>
+</style>
+</head>
+<body>
+
+<div id="About"A HREF="About me.html"TARGET="A" class="tabcontent">
+  <h1>Nurul Nurafeeza</h1>
+  <p>Let's get to know me better.</p>
+</div>
+
+<div id="Expertise" class="tabcontent">
+  <h1>My Expertise</h1>
+  <p>Skills are common. Talent is rare.</p> 
+</div>
+
+<div id="Experience" class="tabcontent">
+  <h1>My Experience</h1>
+  <p>“Nothing ever becomes real 'til it is experienced.” </p>
+</div>
+
+<div id="Education" class="tabcontent">
+  <h1>My Education Background</h1>
+  <p>Education is the passport to the future, for tomorrow belongs to those who prepare for it today.</p>
+</div>
+
+<div id="Family" class="tabcontent">
+  <h1><CENTER><IMG SRC="family.gif" height="50"></h1>
+  <p><font color="black">My Everything.</p> </font>
+</div>
+
+<div id="Gallery" class="tabcontent">
+  <h1>Memories of My Life</h1>
+  <p>Thing that you see in my pictures is that I was not afraid to fall in love with myself and these people.</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h1>How to Contact me?</h1>
+  <p>Anything just kindly refer belows information to contact me.</p>
+</div>
+
+<button class="tablink" onclick="openCity('Home', this, '#0c540f')"><a href="index.html">Home</a></button>
+<button class="tablink" onclick="openCity('About', this, ' #02372d ')" ><a href="About me.html">About</a></button>
+<button class="tablink" onclick="openCity('Expertise', this, ' #4b6a4c ')"><a href="Expertise.html">Expertise</button></a>
+<button class="tablink" onclick="openCity('Experience', this, 'orangered')"><a href="Experience.html">Experience</a></button>
+<button class="tablink" onclick="openCity('Education', this, ' brown')"><a href="Education.html">Education</a></button>
+<button class="tablink" onclick="openCity('Family', this, ' #F08080 ')" id="defaultOpen"><a href="Family.html">Family</a></button>
+<button class="tablink" onclick="openCity('Gallery', this, ' #4b6a4c ')"><a href="Gallery.html">Gallery</button></a>
+<button class="tablink" onclick="openCity('Contact', this, ' #5d9760 ')"><a href="Contact.html">Contact</button></a>
+
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "black";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>  
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.0%;
+  margin-bottom: 16px;
+  padding: 0 10px;
+  padding-color: transparent;
+  background-color:  transparent;
+}
+
+@media screen and (max-width: 400px) {
+  .column {
+    width: 60%;
+    display: block;
+  margin: 12px;
+  }
+}
+
+.card {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 9px;
+  background-color: #f2f3f4 ;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.example {
+  background-color: #eee;
+  width: 400px;
+  height: 100px;
+  border: 1px dotted black;
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.example {
+    -ms-overflow-style: none;
+}
+
+body {
+  background-image: url("white5.jpg"); background-position: right left;
+}
+h3{
+  color: firebrick;
+}
+</style>
+</head>   
+
+
+<body>
+  <p><CENTER><FONT FACE="Lucida Handwriting" COLOR="BLACK" size="10"><P><B>FAMILY</B>,<br> A group that dreams, laughs, plays and loves together, those whom you can count on.</FONT><br>
+<p class="sansserif"><FONT COLOR="BLACK">Always present not only in the good times. <br> FAMILY, the most precios gift.</FONT><br>
+<FONT COLOR="BLACK">FAMILY IS EVERYTHING!</p></FONT><br></p>
+</CENTER>
+</FONT>
+
+<div class="column">
+    <div class="card">
+      <img src="Pictures/abah mie1.jpg" alt="My Stepfather" style="width:100%" height="565" >
+      <div class="container">
+        <h3>Mohd Suhaimi bin Mat Isa</h3>
+        <p class="title">My Stepfather & A private sector employee</p>
+        <p>38 years old.</p>
+        <div class="example"><p>I'm appreciate him in replaced my real father responsibility by taking good care of me and my sisters since we still young until now.</p>
+          <p>He also has helped me a lot and has sacrificed his time and energy to make sure I can continue my studies to a higher level and have a bright future while giving me lots of perspective and advice.</p>
+          <p>Besides, I'm grateful and thank you for him being a great husband to my mother.</p>
+<p>Lastly I just want to thank him for the energy, money, time, kindness, hard work in provided all the equipments, facilities, comfort and convenience for all of us also his love and care toward us.</p>
+<p>Thank you for Everything!</p></div><br>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="mak.jpg" alt="My Mom" style="width:100%" height="565">
+      <div class="container">
+        <h3>Jamilah Binti Mahmud</h3>
+        <p class="title">My Mother & A Housewife</p>
+        <p>44 years old.</p>
+        <div class="example"><p>For my perspective, my mother is a tough and strong woman. </p>
+          <p>Even she has faced many challenges happened in her life after divorce with my real father long ago, she successfullly carried the big responsibility with perseverance in raising her children.</p>
+<p>I think she is a woman like no other. </p>
+<p>She give me spirit in life, matured me, taught me, most importantly she loved and cared of me and my siblings unconditionally.</p>
+<p>There are not enough words to describe just now how important my Mother is to me and in my life.</p></div><br>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="Pictures/angah.jpg" alt="Angah" style="width:100%" height="565">
+      <div class="container">
+        <h3>Nurul Najwa binti Atan</h3>
+        <p class="title">My sister a.k.a. <i>Angah</i></p>
+       <p>18 years old.</p>
+        <div class="example"><p><UL>          
+<LI>2019 SPM postgraduate students
+<LI>Graduated from SMK Berapit, Bukit Mertajam, Pulau Pinang
+<LI>Has a good cooking and baking skills
+</UL>
+          <p>Some people might thought she is my oldest sister or in Malay called as <i> kak long</i> but the truth is she is my sister a.k.a. <i>Angah</i>.</p>
+          <p>The reason why many people thought she is my eldest sister is because of she looks more mature and taller than me.</p>
+          <p>In addition, I'm admit that my sister is prettier than me. &#128579; &#128517;</p></div><br>
+    </div>
+  </div>
+</div>
+
+ <div class="column">
+    <div class="card">
+      <img src="Pictures/ikin.jpg" alt="IQIN" style="width:100%" height="555">
+      <div class="container">
+        <h3>Nurul Asyiqin binti Atan</h3>
+        <p class="title">My younger sister</p>
+       <p>17 years old.</p>
+      <UL>          
+<LI>Form 6 </LI>
+<LI>2020 SPM candidates</LI>
+<LI>Accounting Class</LI>
+<LI>Now study at SMK Berapit, Bukit Mertajam, Pulau Pinang</LI>
+<LI>Helpful and cheerful person</LI>
+</UL>
+    </div>
+  </div>
+</div>
+
+ <div class="column">
+    <div class="card">
+      <img src="Pictures/adam.jpg" alt="Adam" style="width:100%" height="555">
+      <div class="container">
+        <h3>Muhammad Adam bin Mohd Suhaimi</h3>
+        <p class="title">My young brother</p>
+       <p>11 years old.</p>
+       <UL>          
+<LI>Standard 5</LI>
+<LI>Now study at SK Tanah Liat, Bukit Mertajam, Pulau Pinang</LI>
+<LI>Hobbies: Play games, Football and Rugby</LI>
+<LI>Ambition:  Engineer</LI>
+</UL>
+    </div>
+  </div>
+</div>
+
+ <div class="column">
+    <div class="card">
+      <img src="Pictures/piduih.jpg" alt="Firdaus" style="width:100%" height="555">
+      <div class="container">
+        <h3>Muhammad Firdaus bin Mohd Suhaimi</h3>
+        <p class="title">My younger brother</l></p>
+       <p>9 years old.</p>
+<UL>          
+<LI>Standard 3</LI>
+<LI>Now study at SK Tanah Liat, Bukit Mertajam, Pulau Pinang</LI>
+<LI>Hobbies: Play games, Football and Badmintion</LI>
+<LI>Ambition:  Firefighter</LI>
+</UL>
+    </div>
+  </div>
+</div><br>
+
+</div>
+
+<div class="footer">
+  <p>"Be proud of who you are, and not ashamed of how someone else sees you."</p>
+  <audio>
+  <div style="visibility:hidden">
+    <audio autoplay loop>
+    <source src="ARIANA.mp3">
+</audio>
+</div>
+
+</body>
+</html>
